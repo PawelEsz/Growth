@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="center" action="Register" method="post">
+    NAME <br>
+    <label>
+        <input class="text" id="Name" name="Name" type="text" value="" /> <br>
+    </label>
+    EMAIL <br>
+    <label>
+        <input class="text" id="Email" name="Email" type="email" value="" /> <br>
+    </label>
+    PASSWORD <br>
+    <label>
+        <input class="text" id="Password" name="Password" type="password" value="" /><br>
+    </label>
+    CONFIRMED PASSWORD <br>
+    <label>
+        <input class="text" id="Conf" name="Conf" type="password" value="" /><br>
+    </label>
+    <input class="button-log" type="submit" value="Register in" />
+</form>
+<div class="center">
+    <h4>@ViewBag.Registerinfo</h4>
+</div>

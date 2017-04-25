@@ -1,0 +1,22 @@
+﻿@model Growth.Models.User
+
+@if (ViewBag.login == true)
+{
+        <li class="l-right">
+            <a class="nav-link" href="">Wyloguj się!</a>
+        </li>
+        <li class="l-right">
+            <a class="nav-link" href="@Url.Action("Index", "Home")">Witaj</a>
+        </li>
+
+ }
+ else
+ {
+        <li class="l-right">
+            <a class="nav-link" href="@Url.Action("Register", "Account")">Register in</a>
+        </li>
+        <li class="l-right">
+                <a class="nav-link" href="@Url.Action("Login","Account")">Log in</a>
+        </li>
+    }
+
